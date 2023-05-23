@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nineya.springboot.mapper.SeedMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.nineya.springboot.entity.Seed">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="carla_map" property="carlaMap" />
+        <result column="create_date" property="createDate" />
+        <result column="type" property="type" />
+        <result column="desc" property="desc" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, carla_map, create_date, type, desc
+    </sql>
+
+</mapper>

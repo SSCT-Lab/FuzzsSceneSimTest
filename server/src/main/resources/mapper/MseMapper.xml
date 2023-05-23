@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nineya.springboot.mapper.MseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.nineya.springboot.entity.Mse">
+        <id column="id" property="id" />
+        <result column="ori_mse" property="oriMse" />
+        <result column="vc_mse" property="vcMse" />
+        <result column="tm_mse" property="tmMse" />
+        <result column="si_mse" property="siMse" />
+        <result column="rn_mse" property="rnMse" />
+        <result column="fg_mse" property="fgMse" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, ori_mse, vc_mse, tm_mse, si_mse, rn_mse, fg_mse
+    </sql>
+
+</mapper>

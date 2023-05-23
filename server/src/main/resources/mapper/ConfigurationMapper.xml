@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nineya.springboot.mapper.ConfigurationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.nineya.springboot.entity.Configuration">
+        <id column="id" property="id" />
+        <result column="pri_queue_size" property="priQueueSize" />
+        <result column="init_pop_size" property="initPopSize" />
+        <result column="sampling" property="sampling" />
+        <result column="radar_loop" property="radarLoop" />
+        <result column="loop" property="loop" />
+        <result column="fit_function" property="fitFunction" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, pri_queue_size, init_pop_size, sampling, radar_loop, loop, fit_funcion
+    </sql>
+
+</mapper>

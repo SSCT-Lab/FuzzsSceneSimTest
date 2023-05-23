@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nineya.springboot.mapper.TestResultMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.nineya.springboot.entity.TestResult">
+        <id column="id" property="id" />
+        <result column="task_id" property="taskId" />
+        <result column="model_id" property="modelId" />
+        <result column="model_name" property="modelName" />
+        <result column="mse_id" property="mseId" />
+        <result column="div_count" property="divCount" />
+        <result column="error_count" property="errorCount" />
+        <result column="error_count_per_loop" property="errorCountPerLoop" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, task_id, model_id, model_name, mse_id, div_count, error_count, error_count_per_loop
+    </sql>
+
+</mapper>
